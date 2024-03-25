@@ -1,14 +1,11 @@
-# Copy main bids folder from PredictEye project
-rsync -avuz --progress /scratch/mszinte/data/PredictEye/bids_data/ /scratch/mszinte/data/RetinoMaps
+# Copy tar files from XNAT to sourcedata folder
+# untar the file
+tar vfxz XNAT-DeepMReye_NIFTI-2024-03-25_10h52.tar.gz -C /scratch/mszinte/data/deepmreye/
+# delete the newly created xnat subfolder and move data to root
 
-# Create additional BIDS folders
-mkdir /scratch/mszinte/data/RetinoMaps/code
-mkdir /scratch/mszinte/data/RetinoMaps/derivatives
-mkdir /scratch/mszinte/data/RetinoMaps/sourcedata
-
-# Copy code folder from amblyo_prf
-rsync -avuz --progress /scratch/mszinte/data/amblyo_prf/code/ /scratch/mszinte/data/RetinoMaps/code
+# copy code folder from another project
+rsync -avuz /scratch/mszinte/data/RetinoMaps/code/ /scratch/mszinte/data/deepmreye/code/
 
 # Change permissions to all data
-chmod -Rf 771 /scratch/mszinte/data/RetinoMaps
-chgrp -Rf 327 /scratch/mszinte/data/RetinoMaps
+chmod -Rf 771 /scratch/mszinte/data/deepmreye
+chgrp -Rf 327 /scratch/mszinte/data/deepmreye
