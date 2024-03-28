@@ -32,9 +32,10 @@ Uriel LASCOMBES, Sina KLING, Guillaume MASSON, Matthias NAU, & Martin SZINTE
 #### BIDS
 - [x] Copy brain data from XNAT [copy_data.py](analysis_code/preproc/bids/bids_copy_data.sh)
 - [ ] Copy behavioral data [copy_data.py](analysis_code/preproc/bids/bids_copy_data.sh) 
+- [ ] Rename sessions to add behaviour data [rename-ses.sh] (analysis_code/preproc/bids/rename_ses.sh)
 - [ ] Deface participants t1w image [deface_sbatch.py](analysis_code/preproc/bids/deface_sbatch.py) 
     </br>Note: run script for each subject separately.
-- [ ] put eyetracking in latest BEP020 BIDS format
+- [ ] put eyetracking in latest BEP020 BIDS format 
 - [ ] Correct BIDS problems [correct_bids_files.ipynb](analysis_code/preproc/bids/correct_bids_files.ipynb)
 - [ ] Validate bids format [https://bids-standard.github.io/bids-validator/] / alternately, use a docker [https://pypi.org/project/bids-validator/]
     </br>Note: for the webpage, use FireFox and wait for at least 30 min, even if nothing seems to happen.

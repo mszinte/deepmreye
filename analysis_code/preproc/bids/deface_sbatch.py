@@ -75,7 +75,7 @@ chgrp_cmd = """chgrp -Rf {group} {main_dir}/{project_dir}\n""".format(main_dir=m
 
 
 # get files
-session = 'ses-01'
+session = 'ses-02'
 t1w_filename = "{}/{}/{}/{}/anat/{}_{}_T1w.nii.gz".format(main_dir,project_dir,subject,session,subject,session)
 
 t2w_filename = "{}/{}/{}/{}/anat/{}_{}_T2w.nii.gz".format(main_dir,project_dir,subject,session,subject,session)
