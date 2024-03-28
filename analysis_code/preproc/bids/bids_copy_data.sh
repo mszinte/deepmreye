@@ -22,22 +22,22 @@ chgrp -Rf 327 /scratch/mszinte/data/deepmreye
 
 # rename data accordingly first using rename_ses.sh
 
-scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-01/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-01/func
-scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-02/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-01/func
+scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-01/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-01/behav
+scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-02/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-01/behav
 
-scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-01/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-01/func
-scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-02/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-01/func
+scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-01/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-01/behav
+scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-02/ses-01/beh skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-01/behav
 
 # remove behav folder and move data to the root 
 
 
 # copy eyetracking data (Functional session)
 
-scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-01/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-02/func
-scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-02/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-02/func
+scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-01/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-02/behav
+scp -r -P 8822 /Users/sinakling/projects/deepmreyecalib/experiment_code/data/sub-02/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-02/behav
 
-scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-01/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-02/func
-scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-02/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-02/func
+scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-01/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-01/ses-02/behav
+scp -r -P 8822 /Users/sinakling/projects/deepmreyeclosed/data/sub-02/ses-01/func skling@login.mesocentre.univ-amu.fr:/scratch/mszinte/data/deepmreye/sub-02/ses-02/behav
 
 # remove behav folder and move data to the root 
 
