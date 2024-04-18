@@ -153,6 +153,6 @@ of.write("{slurm_cmd}{singularity_cmd}{chmod_cmd}{chgrp_cmd}".format(
 of.close()
 
 # Submit jobs
-#print("Submitting {sh_fn} to queue".format(sh_fn=sh_fn))
-#os.chdir(log_dir)
-#os.system("sbatch {sh_fn}".format(sh_fn=sh_fn))
+print("Submitting {sh_fn} to queue".format(sh_fn=sh_fn))
+os.chdir(log_dir)
+os.system("sbatch {sh_fn}".format(sh_fn=sh_fn))
