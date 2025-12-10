@@ -25,7 +25,7 @@ preprocessed files
 -----------------------------------------------------------------------------------------
 To run:
 1. cd to function
->> cd ~/projects/RetinoMaps/analysis_code/preproc/functional
+>> cd ~/projects/deepmreye/analysis_code/preproc/functional
 2. run python command
 python fmriprep_sbatch.py [main directory] [project name] [subject num]
                           [hour proc.] [anat_only_(y/n)] [aroma_(y/n)] [fmapfree_(y/n)] 
@@ -33,7 +33,7 @@ python fmriprep_sbatch.py [main directory] [project name] [subject num]
                           [dof] [email account] [group] [server_project]
 -----------------------------------------------------------------------------------------
 Exemple:
-python fmriprep_sbatch.py /scratch/mszinte/data RetinoMaps sub-21 30 anat_only_n aroma_n fmapfree_n skip_bids_val_n cifti_output_170k_y fsaverage_y 12 uriel.lascombes@etu.univ-amu.fr 327 b327
+python fmriprep_sbatch.py /scratch/mszinte/data deepmreye sub-13 30 anat_only_n aroma_n fmapfree_n skip_bids_val_n cifti_output_170k_y fsaverage_y 12 sina.kling@univ-amu.fr 327 b327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
 -----------------------------------------------------------------------------------------
