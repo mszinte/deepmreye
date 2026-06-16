@@ -4,8 +4,8 @@
 We first proceed to a calibration of DeepMReye (deepmreyecalib) and next next </br>
 evaluate it in condition of darkness and eye closed (deepmreyeclosed). </br>
 This repository contains all code allowing us to analyse our dataset [OpenNeuro:DS006833](https://openneuro.org/datasets/ds006833).</br>
-All model weights are available here (https://figshare.com/s/fe874ffbb37f5bc08645).<br.>
-We also provide a ready to use code repository for using the model weights here (https://github.com/sinaklg/int_deepmreye/tree/main).<br.>
+All model weights are available here (https://figshare.com/s/fe874ffbb37f5bc08645).<br>
+We also provide a ready to use code repository for using the model weights here (https://github.com/sinaklg/int_deepmreye/tree/main).<br>
 
 ---
 ## Authors (alphabetic order): 
