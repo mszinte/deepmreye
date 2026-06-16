@@ -8,9 +8,9 @@ All model weights are available here (https://figshare.com/s/fe874ffbb37f5bc0864
 We also provide a ready to use code repository for using the model weights here (https://github.com/sinaklg/int_deepmreye/tree/main).<br>
 
 ---
-## Authors (alphabetic order): 
+## Authors: 
 ---
-Uriel LASCOMBES, Sina KLING, Guillaume MASSON, Matthias NAU, & Martin SZINTE
+S.M. Kling, U. Lascombes, M. Nau, G.S. Masson, M. Szinte 
 
 ## Main dependencies
 ---
