@@ -1,6 +1,6 @@
 """
 -----------------------------------------------------------------------------------------
-eyetracking_preproc.py
+eyetracking_labels.py
 -----------------------------------------------------------------------------------------
 Goal of the script:
 Preprocess BIDS formatted eyetracking data for creating training labels for 
@@ -26,7 +26,7 @@ Cleaned timeseries data per run
 -----------------------------------------------------------------------------------------
 To run:
 cd /Users/sinakling/disks/meso_H/projects/deepmreye/training_code
-python eyetracking_preproc.py /Users/sinakling/disks/meso_shared deepmreye sub-01 DeepMReyeCalib labels 327
+python eyetracking_labels.py /Users/sinakling/disks/meso_shared deepmreye sub-01 DeepMReyeCalib labels 327
 ------------------------------------------------------------------------------------------------------------
 """
 import pandas as pd

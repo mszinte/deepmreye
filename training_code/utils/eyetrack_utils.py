@@ -681,6 +681,33 @@ def extract_triggers(df_event, onset_pattern, offset_pattern):
     
     return [time_start_eye,time_end_eye]
 
+import numpy as np
+
+def chunk_and_median(eyetracking_data, sampling_rate=1000, chunk_duration=1.2):
+    """
+    Splits continuous eyetracking data into chunks of specified duration
+    and computes the median for each chunk, ensuring no NaNs are returned.
+
+    Parameters:
+    - eyetracking_data: 1D NumPy array (continuous signal)
+    - sampling_rate: int, samples per second (default: 1000 Hz)
+    - chunk_duration: float, duration of each chunk in seconds (default: 1.2 s)
+
+    Returns:
+    - medians: 1D NumPy array with median values per chunk
+    """
+    # Remove NaNs from input
+    eyetracking_data = np.nan_to_num(eyetracking_data, nan=0.0)
+
+    chunk_size = int(sampling_rate * chunk_duration)
+    num_chunks = len(eyetracking_data) // chunk_size
+
+    medians = np.array([
+        np.nanmedian(eyetracking_data[i * chunk_size: (i + 1) * chunk_size])  # Ensures NaN-safe median
+        for i in range(num_chunks)
+    ])
+
+    return medians
 
 
 def load_data_events(main_dir, project_dir, subject, task, run):

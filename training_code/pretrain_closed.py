@@ -63,7 +63,7 @@ def adapt_evaluation(participant_evaluation):
     return df_pred_median, df_pred_subtr
 
 # Define paths to functional data
-main_dir = f"{sys.argv[1]}/{sys.argv[2]}/derivatives/int_deepmreye/deepmreye_closed" 
+main_dir = f"{sys.argv[1]}/{sys.argv[2]}/derivatives/int_deepmreye/deepmreye_eyestate_tracking" 
 func_dir = f"{main_dir}/func"  
 model_dir = f"{main_dir}/model/"
 model_file = f"{model_dir}datasets_1to5.h5"
